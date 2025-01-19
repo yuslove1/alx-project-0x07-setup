@@ -98,9 +98,10 @@ const Home: React.FC = () => {
     }
 
     const data = await resp.json()
+    setImageUrl(data.message)
     setIsLoading(false)
 
-    console.log(data)
+  
   };
 
   return (
